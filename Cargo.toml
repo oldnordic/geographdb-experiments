@@ -1,0 +1,27 @@
+[package]
+name = "geographdb-experiments"
+version = "0.1.0"
+edition = "2021"
+description = "Experiments and demos built on geographdb-core"
+license = "GPL-3.0-only"
+repository = "https://github.com/oldnordic/geographdb-core"
+publish = false
+
+[workspace]
+members = ["."]
+resolver = "2"
+
+[dependencies]
+geographdb-core = { path = "../geographdb-core" }
+
+anyhow = "1.0"
+glam = { version = "0.27", features = ["serde"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tempfile = "3.0"
+tokenizers = { version = "0.22", features = ["http"] }
+
+# Used by corpus / graph construction demos
+rand = "0.10"
+petgraph = "0.6"
+nalgebra = "0.29"

@@ -1,0 +1,29 @@
+# Rust build artifacts
+/target
+**/*.rs.bk
+
+# Generated data / outputs
+data/
+output*.log
+*.log
+
+# Cargo lock for libraries (keep for application crates if desired; ignored here to reduce noise)
+# Cargo.lock
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Environment / secrets
+.env
+.env.local
+
+# Index / tooling
+.magellan/
+.llmgrep/
+.mirage/
+.splice/
